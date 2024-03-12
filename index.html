@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css"></linkrel>
+    <title>ANDREY SUPER</title>
+    <link rel="stylesheet" href="./index.css"></link>
  </head>
  
 <body class="body">
@@ -15,12 +15,14 @@
       <img class="header__box__images__el1"src="./img/logo.png" >
       <img class="header__box__images__el2" src="./img/hs.png">
     </div>
+    <nav>
     <ul class="header__box__menu">
-      <li class="header__box__menu_el header__box__menu_el_active">Menu</li>
-      <li class="header__box__menu_el">Recipes</li>
-      <li class="header__box__menu_el">Chefs</li>
-      <li class="header__box__menu_el">Contacts</li>
+      <li><a class="header__box__menu_el header__box__menu_el_active" href="#about">Menu</a></li>
+      <li><a class="header__box__menu_el" href="#dishes">Recipes</a></li>
+      <li><a class="header__box__menu_el" href="#chefs">Chefs</a></li>
+      <li><a class="header__box__menu_el">Contacts</a></li>
     </ul>
+  </nav>
   </header>
 <main>
   <div class="information "> 
@@ -51,13 +53,7 @@
     </div>
   </div>
   <div class="about margin">
-    <h4 class="test" data-text-content="ABOUT">The Basics Of Healthy Food</h4>
-      <!-- <div class="title">
-        <div class="title__box">
-          <h3 class="title__box__back">ABOUT</h3>
-          <h4 class="title__box__front">The Basics Of Healthy Food</h4>
-      </div>
-    </div> -->
+    <h4 id="about" class="title" data-text-content="about">The Basics Of Healthy Food</h4>
     <p class="about__text">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</p>
   <div class="about__carousel">
     <img class="about__carousel__button" src="./img/Left.png">
@@ -66,13 +62,10 @@
     <img class="about__carousel__button" src="./img/Right.png">
 </div>
   </div>
+  <div class="title__box">
+    <h4 class="title" data-text-content="WORK">How it works</h4>
+  </div>
   <div class="works">
-    <div class="title">
-      <div class="title__box">
-        <h3 class="title__box__back">WORK</h3>
-        <h4 class="title__box__front">How it works</h4>
-        <div class="title__box__bottom"></div>
-    </div>
     <div class="works__card margin">
       <div class="works__card__green_box">
         <h4 class="works__card__green_box__title">Pick meals</h4>
@@ -96,11 +89,8 @@
     </div>
   </div>
   </div>
-    <div class="title">
       <div class="title__box">
-        <h3 class="title__box__back">DISHES</h3>
-        <h4 class="title__box__front">Dish Of The Day</h4>
-        <div class="title__box__bottom"></div>
+        <h4 id="dishes" class="title" data-text-content="DISHES">Dish Of The Day</h4>
       </div>
       <div class="dishes padding">
     <div class="dishes__card">
@@ -213,9 +203,7 @@
 </div>
 </div>
 <div class="title__box">
-  <h3 class="title__box__back">CHEFS</h3>
-  <h4 class="title__box__front">This month's chefs</h4>
-  <div class="title__box__bottom"></div>
+  <h4 id="chefs" class="title" data-text-content="CHEFS">This month's chefs</h4>
 </div>
 <div class="shefs padding">
   <div class="shefs__inf">
@@ -260,12 +248,11 @@
       <img class="shefs__dishes__img" src="./img/foxdishes3.png">
   </div>
   </div>
-  </div>
-  <div class="title__box">
-  <h3 class="title__box__back">RECIPES</h3>
-  <h4 class="title__box__front">Recipes From Our Chefs</h4>
-  <div class="title__box__bottom"></div>
 </div>
+<div class="title__box">
+  <h4 class="title" data-text-content="RECIPES">Recipes From Our Chefs</h4>
+</div>
+
 <div class="events padding">
   <div class="events__box__big">
     <button class="events__box__big__button">
@@ -278,14 +265,14 @@
       <p class="events__box__big__description__date">05 Jul 2016</p>
       <p class="events__box__big__description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <p class="events__box__big__description__date">Jason Keller</p>
-      <div class="events__box__big__description__views">
-           <div class="events__box__big__description__views__visit">
-            <img class="events__box__big__description__views__visit__img"src="./img/eye.png">
-            <p class="events__box__big__description__views__number">275</p>
+      <div class="reviews">
+           <div class="reviews__box">
+            <img class="reviews__img"src="./img/eye.png">
+            <p class="reviews__text">275</p>
            </div>
-           <div class="events__box__big__description__views__comments">
-            <img class="events__box__big__description__views__comments__img" src="./img/comment.png">
-            <p class="events__box__big__description__views__number">12</p>
+           <div class="reviews__box">
+            <img class="reviews__img" src="./img/comment.png">
+            <p class="reviews__text">12</p>
             </div>
       </div>
     </div>
@@ -293,6 +280,30 @@
   <div class="events__box">
     <div class="events__box__grey">
     <p class="events__box__grey__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+    <div class="events__box__grey__description">
+      <div class="events__box__grey__el">
+      <div class="events__box__big__description__title">
+      <h5 class="events__box__big__description__title_el">lunch</h5>
+      </div>
+      <p class="events__box__grey__data">07 Jan 2016</p>  
+    </div>
+        <div class="events__box__grey_el2">
+        <div class="reviews__box">
+         <img class="reviews__img"src="./img/eye.png">
+         <p class="reviews__text">275</p>
+        </div>
+        <div class="reviews__box">
+         <img class="reviews__img" src="./img/comment.png">
+         <p class="reviews__text">12</p>
+         </div>
+        </div>
+   </div>
+      
+      
+    </div>
+    <div>
+      
+    </div>
   </div>
   </div>
 </div>
