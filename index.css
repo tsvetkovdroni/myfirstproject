@@ -19,6 +19,9 @@ body {
   font-family: Helvetica Neue, sans-serif;
   color:white;
 }
+h5{
+  text-transform: uppercase;
+}
 .padding{
   padding-left: 165px;
   padding-right: 165px;
@@ -490,14 +493,14 @@ transform: translate(-50%,0);
   flex-direction: column;
   align-items: center;
 }
-.events__box__big__description__title{
+.events__title{
   background-color: rgba(0, 0, 0, 0.3);
   width: 90px;
   height: 25px;
   border-radius: 4px;
   text-align: center;
 }
-.events__box__big__description__title_el{
+.events__title_el{
   font-size: 10px;
   color: #FFFFFF;
   font-weight: 900;
@@ -540,6 +543,7 @@ transform: translate(-50%,0);
 
 .reviews__text{
   font-size: 12px;
+  font-weight: 500;
 }
 .events__box__big__button {
   padding: 0;
@@ -559,11 +563,16 @@ transform: translate(-50%,0);
   height: 13px;
   margin-bottom: -2px;
 }
+.events__box{
+  display: flex;
+  flex-direction: column;
+}
 .events__box__grey{
   width: 540px;
   background-color: #252525;
   padding: 30px 25px 25px 30px;
   border-radius: 6px;
+  margin-bottom: 30px;
   }
   .events__box__grey__text{
     font-size: 16px;
@@ -577,12 +586,31 @@ transform: translate(-50%,0);
     display: flex;
     align-items: center;
   }
-  .events__box__grey__data{
+  .events__data{
     margin-left: 15px;
     font-size: 12px;
     line-height: 25px;
+    font-weight: 500;
   }
   .events__box__grey_el2{
     display: flex;
     justify-content: space-between;
+  }
+  .events__box__el{
+    background-image:url(./img/eventimg.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .events__box__el2{
+    background-color: #34C759;
+  }
+  .events__data_el{
+    color: #1A1A1A;
+  }
+  .reviews__text_el{
+    color: #1A1A1A;
+  }
+  .events__title_el2{
+    background-color: #000000;
+    border-radius: 4px;
   }
